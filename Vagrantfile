@@ -1,9 +1,6 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "almalinux/9"
 
-  config.vm.boot_timeout = 600
-  config.ssh.timeout = 300
-
   # 3 nodes with static private IPs (easy for Ansible/K8s labs)
   NODES = [
     { name: "rhel-master",  ip: "192.168.56.10", cpu: 1, mem: 1072 },
