@@ -6,9 +6,9 @@ Vagrant.configure("2") do |config|
 
   # 3 nodes with static private IPs (easy for Ansible/K8s labs)
   NODES = [
-    { name: "rhel-master",  ip: "192.168.56.10", cpu: 2, mem: 3072 },
-    { name: "rhel-worker1", ip: "192.168.56.11", cpu: 2, mem: 2048 },
-    { name: "rhel-worker2", ip: "192.168.56.12", cpu: 2, mem: 2048 }
+    { name: "rhel-master",  ip: "192.168.56.10", cpu: 1, mem: 1072 },
+    { name: "rhel-worker1", ip: "192.168.56.11", cpu: 1, mem: 1048 },
+    { name: "rhel-worker2", ip: "192.168.56.12", cpu: 1, mem: 1048 }
   ]
 
   NODES.each do |n|
